@@ -1,2 +1,36 @@
 Analyse des besoins
 
+Produit 
+Chaque produit possède :
+
+* Un identifiant
+* Une désignation
+* Un prix unitaire
+* Une quantité en stock
+
+Caisse 
+
+Chaque caisse possède :
+
+* Un identifiant
+* Un numéro de caisse
+
+Achat
+
+Un achat correspond à un client.
+
+Un achat contient :
+
+* Une date
+* Une caisse
+* Plusieurs produits
+* Une quantité pour chaque produit
+* Un montant total
+
+
+Travaux a faire 1 
+
+creer la base avec des insert (ok)
+initialiser codeigniter 
+
+

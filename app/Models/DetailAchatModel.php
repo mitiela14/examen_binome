@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AchatModel extends Model 
+class DetailAchatModel extends Model 
 {
-    protected $table = 'achat';
+    protected $table = 'detail_achat';
 
     protected $primaryKey = 'id';
 
@@ -16,12 +16,12 @@ class AchatModel extends Model
 
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['dateAchat', 'total', 'idCaisse'];
+    protected $allowedFields = [ 'quantite', 'prix_unitaire', 'idAchat' , 'idProduit'];
 
     protected $useTimestamps = true;
 
     protected $createdField  = 'created_at';
 
     protected $updatedField  = 'updated_at';
-
+    
 }

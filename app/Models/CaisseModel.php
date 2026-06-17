@@ -4,24 +4,19 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AchatModel extends Model 
+class CaisseModel extends Model
 {
-    protected $table = 'achat';
-
-    protected $primaryKey = 'id';
+    protected $table      = 'caisse';
+    protected $primaryKey = 'idCaisse';
 
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
 
     protected $useSoftDeletes = false;
-
-    protected $allowedFields = ['dateAchat', 'total', 'idCaisse'];
-
-    protected $useTimestamps = true;
+    protected $allowedFields = ['numeroCaisse'];
+    protected $useTimestamps = false;
 
     protected $createdField  = 'created_at';
-
     protected $updatedField  = 'updated_at';
-
 }

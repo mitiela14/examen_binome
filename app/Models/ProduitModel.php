@@ -11,5 +11,19 @@ class ProduitModel extends Model
 
     protected $primaryKey = 'id';
 
-    protected 
+    protected $useAutoIncrement = true;
+
+    protected $returnType = 'array';
+
+    protected $useSoftDeletes = false;
+
+    protected $allowedFields = ['designation', 'prix', 'quantiteStock'];
+
+    protected $useTimestamps = true;
+
+    protected $createdField  = 'created_at';
+
+    protected $updatedField  = 'updated_at';
+
+
 }
